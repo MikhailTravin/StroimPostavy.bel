@@ -1,0 +1,77 @@
+<div id="leave-request" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__forms">
+				<div class="popup__titles">
+					<h3>Оставьте заявку сейчас!</h3>
+					<p>
+						Мы свяжемся с вами, проконсультируем
+						и расчитаем полную стоимость работ.
+					</p>
+				</div>
+				<form data-ajax data-popup-message="#thanks" 
+					class="popup__form form">
+					<div class="form__inputs">
+						<div class="form__input">
+							<input type="text" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="form__input">
+							<input data-required type="text" name="phone" placeholder="Ваш номер телефона">
+						</div>
+						<div class="form__input">
+							<div class="form__select select">
+								<div class="select__menu">
+									<div class="select__btn">
+										<div class="select__btntext">
+											<input autocomplete="off" type="text" name="type-work"
+												placeholder="Вид работ" value class="select__input">
+										</div>
+										<div class="select__icon _icon-arrow-2"></div>
+									</div>
+									<div class="select__body">
+										<div class="select__options">
+											<div class="select__option">
+												<div class="select__option-text">Вид работ_1</div>
+											</div>
+											<div class="select__option">
+												<div class="select__option-text">Вид работ_2</div>
+											</div>
+											<div class="select__option">
+												<div class="select__option-text">Вид работ_3</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__input">
+							<input type="text" name="amount-work" placeholder="Объем работы  (квадратных метров)">
+						</div>
+					</div>
+					<button type="submit" class="form__button button">
+						<div>Отправить</div>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="thanks" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-close"></button>
+			<div class="popup__forms">
+				<div class="popup__titles">
+					<h3>Спасибо за заявку</h3>
+					<p>
+						Мы свяжемся с вами
+						<br>
+						в ближайшее время
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
