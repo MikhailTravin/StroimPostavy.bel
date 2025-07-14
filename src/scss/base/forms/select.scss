@@ -1,0 +1,83 @@
+.select {
+	position: relative;
+	// .select__menu
+	&__menu {
+		position: relative;
+		&._active {
+			.select__icon {
+				transform: rotate(-180deg);
+			}
+			.select__body {
+				display: block;
+			}
+		}
+	}
+	// .select__btn
+	&__btn {
+		position: relative;
+		cursor: pointer;
+	}
+	// .select__btntext
+	&__btntext {
+	}
+	// .select__input
+	&__input {
+		pointer-events: none;
+	}
+	// .select__icon
+	&__icon {
+		cursor: pointer;
+		position: absolute;
+		top: 21px;
+		right: 18px;
+		transition: all 0.3s ease 0s;
+		&::before {
+			font-size: 7px;
+			color: $lightgrey;
+		}
+	}
+	// .select__body
+	&__body {
+		outline: none;
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+		margin: 4px 0px 0px 0px;
+	}
+	// .select__options
+	&__options {
+		max-height: 100px;
+		background: $white;
+		background: #f1f1f1;
+		border-radius: 8px;
+		padding: 5px 0px;
+		overflow: auto;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
+	// .select__option
+	&__option {
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		display: block;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 160%;
+		padding: 4px 20px;
+		&._active {
+			display: none;
+		}
+		&:hover {
+			color: $green;
+		}
+	}
+	// .select__option-text
+	&__option-text {
+	}
+}
